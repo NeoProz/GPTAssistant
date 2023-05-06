@@ -4,7 +4,10 @@ import openai
 import pyttsx3
 
 
-openai.api_key = "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"
+openai.api_key = ""
+
+if openai.api_key == "":
+    print("Please make your own api key and put it in the variable openai.api.key!")
 
 r = sr.Recognizer()
 engine = pyttsx3.init()
